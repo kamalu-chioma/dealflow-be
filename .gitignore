@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+
+# Virtual envs
+.venv/
+venv/
+
+# Environment files (never commit secrets)
+.env
+.env.*
+
+# OS / tooling
+.DS_Store
+Thumbs.db
+
+# Docs
+*.md
+*.mdx
+
+# Local junk
+Untitled
