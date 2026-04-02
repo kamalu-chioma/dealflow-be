@@ -20,6 +20,8 @@ app.add_middleware(
         "http://localhost:3001",
         "http://127.0.0.1:3000",
         "http://127.0.0.1:3001",
+        "https://www.dealflowai.site/", 
+        "https://dealflow-front.vercel.app/"
     ],
     allow_credentials=True,
     allow_methods=["*"],
