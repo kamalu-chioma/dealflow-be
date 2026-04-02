@@ -9,7 +9,18 @@ if str(_backend_dir) not in sys.path:
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from routers import profile, company_profile, leads, analysis, notes, chat, compare, lead_discovery, messaging, webhooks
+from routers import (
+    profile,
+    company_profile,
+    leads,
+    analysis,
+    notes,
+    chat,
+    compare,
+    lead_discovery,
+    messaging,
+    webhooks,
+)
 
 app = FastAPI(title="DealFlow AI API", version="0.1.0")
 
@@ -20,8 +31,9 @@ app.add_middleware(
         "http://localhost:3001",
         "http://127.0.0.1:3000",
         "http://127.0.0.1:3001",
-        "https://www.dealflowai.site/", 
-        "https://dealflow-front.vercel.app/"
+        "https://dealflowai.site",
+        "https://www.dealflowai.site",
+        "https://dealflow-front.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
